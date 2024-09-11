@@ -87,7 +87,7 @@ return-statement ::= 'return' expression? ';'
 expression-statement ::= expression ';'
 
 expression ::= assignment 
-assignment ::= (call '.')? IDENTIFIER '=' assignment | logic-or
+assignment ::= IDENTIFIER '=' assignment | logic-or
 logic-or ::= logic-and ('or' logic-and)*
 logic-and ::= equality ('and' equality)*
 equality ::= comparison (('==' | '!=') comparison)*
@@ -98,7 +98,7 @@ unary ::= ('-' | '+' | 'not') unary | exponent
 exponent ::= call ('**' factor)*
 
 call-arguments ::= expression (',' expression)*
-call ::= primary ( '(' call-arguments+ ')' | '.' IDENTIFIER)?
+call ::= primary ( '(' call-arguments+ ')'
 primary ::= NUMBER_LITERAL 
         | STRING_LITERAL 
         | IDENTIFIER
