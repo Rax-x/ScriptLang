@@ -1,6 +1,6 @@
 # ScriptLang
 
-This is a simple scripting language written in C++17. This project was a way to improve my knowledge on developing programming languages, stack-based virtual machines, and even C++. In fact, the goal of this project is not to create a fast and efficient scripting programming language, but to learn how to parse and compile source code and how to output detailed error messages when one of these steps fails.
+This is a simple scripting language written in C++17. This project was a way to improve my knowledge on developing programming languages, stack-based virtual machines and even C++. In fact, the goal of this project is not to create a fast and efficient scripting programming language, but to learn how to parse and compile source code and how to output detailed error messages when one of these steps fails.
 
 ```
 defun fib(n) {
@@ -51,7 +51,7 @@ For this project I took inspiration from these projects:
 
 
 
-> ![WARNING]
+> [!WARNING]
 > 
 > This language don't have structs or similar construcuts and don't support closures.
 
