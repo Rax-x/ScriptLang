@@ -36,8 +36,8 @@ print fib(9);
 ## 👩‍💻 Installation
 
 ### 📜 Prerequisites
-- g++ compiler
-- make
+- `g++` compiler
+- `make`
 
 ## ⚒️ How to build the interpreter?
 In your terminal run the following command to build the interpreter:
