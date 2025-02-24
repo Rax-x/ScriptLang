@@ -1,61 +1,60 @@
-# ScriptLang
+# ⚡ ScriptLang
 
 This is a simple scripting language written in C++17. This project was a way to improve my knowledge on developing programming languages, stack-based virtual machines and even C++. In fact, the goal of this project is not to create a fast and efficient scripting programming language, but to learn how to parse and compile source code and how to output detailed error messages when one of these steps fails.
 
-```
+```lisp
 defun fib(n) {
-      if n <= 1 { return 1; }
+      if n <= 1 {
+            return 1;
+      }
+
       return fib(n - 1) + fib(n - 2);
 }
 
 print fib(9);
-
-// Output: 34
-
 ```
 
+### Language Features
 
-For this project I took inspiration from these projects:
+- Global and local variables
+- If statements
+- While loop
+- Functions
+- Print statement
+- Classical operators + exponentiation
 
-- [GitHub - google/closure-compiler: A JavaScript checker and optimizer.](https://github.com/google/closure-compiler)
-
-- [GitHub - wren-lang/wren: The Wren Programming.](https://github.com/wren-lang/wren)
-
-
-
-### Features
-
-- **Global and local variables**
-
-- **If statements**
-
-- **While loop**
-
-- **Functions**
-
-- **Print statement**
-
-- **All classical binary operations + exponentiation**
-
-
-
-### Data Types
-
-- **Nil**
-
-- **Booleans**
-
-- **Strings**
-
-- **Numbers**
-
-
+### Supported data types
+- Nil
+- Booleans
+- Strings
+- Numbers
 
 > [!WARNING]
 > 
-> This language don't have structs or similar construcuts and don't support closures.
+> This language don't have structs or similar constructs and don't support closures.
 
-## Grammar
+## 👩‍💻 Installation
+
+### 📜 Prerequisites
+- g++ compiler
+- make
+
+## ⚒️ How to build the interpreter?
+In your terminal run the following command to build the interpreter:
+
+```bash
+make
+```
+
+After running it, a `build` folder will be generated, where the `scriptlang` interpreter executable is located.
+
+## 🔭 Resources
+For this project I took inspiration from these projects:
+
+- [GitHub - google/closure-compiler: A JavaScript checker and optimizer.](https://github.com/google/closure-compiler)
+- [GitHub - wren-lang/wren: The Wren Programming.](https://github.com/wren-lang/wren)
+
+## ✍️ Grammar
 
 ```
 declaration ::= function-decl
@@ -108,9 +107,6 @@ primary ::= NUMBER_LITERAL
         | '(' expression ')'
 
 ```
-
-# 
-
 
 
 
