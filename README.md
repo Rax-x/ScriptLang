@@ -1,4 +1,4 @@
-# ⚡ ScriptLang
+# 💬 ScriptLang
 
 This is a simple scripting language written in C++17. This project was a way to improve my knowledge on developing programming languages, stack-based virtual machines and even C++. In fact, the goal of this project is not to create a fast and efficient scripting programming language, but to learn how to parse and compile source code and how to output detailed error messages when one of these steps fails.
 
@@ -14,7 +14,7 @@ defun fib(n) {
 print fib(9);
 ```
 
-### Language Features
+### 🌟 Language Features
 
 - Global and local variables
 - If statements
@@ -23,7 +23,7 @@ print fib(9);
 - Print statement
 - Classical operators + exponentiation
 
-### Supported data types
+### 🧮 Supported data types
 - Nil
 - Booleans
 - Strings
@@ -33,7 +33,7 @@ print fib(9);
 > 
 > This language don't have structs or similar constructs and don't support closures.
 
-## 👩‍💻 Installation
+## 🌱 Installation
 
 ### 📜 Prerequisites
 - `g++` compiler
@@ -48,13 +48,7 @@ make
 
 After running it, a `build` folder will be generated, where the `scriptlang` interpreter executable is located.
 
-## 🔭 Resources
-For this project I took inspiration from these projects:
-
-- [GitHub - google/closure-compiler: A JavaScript checker and optimizer.](https://github.com/google/closure-compiler)
-- [GitHub - wren-lang/wren: The Wren Programming.](https://github.com/wren-lang/wren)
-
-## ✍️ Grammar
+## ✍️ Language Grammar
 
 ```
 declaration ::= function-decl
@@ -108,21 +102,8 @@ primary ::= NUMBER_LITERAL
 
 ```
 
+## 🔭 Resources
+For this project I took inspiration from these projects:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- [GitHub - google/closure-compiler: A JavaScript checker and optimizer.](https://github.com/google/closure-compiler)
+- [GitHub - wren-lang/wren: The Wren Programming.](https://github.com/wren-lang/wren)
