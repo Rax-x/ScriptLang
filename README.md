@@ -39,7 +39,7 @@ print fib(9);
 - `g++` compiler
 - `make`
 
-## ⚒️ How to build the interpreter?
+### ⚒️ How to build the interpreter?
 In your terminal run the following command to build the interpreter:
 
 ```bash
